@@ -1,0 +1,49 @@
+/********body styling********/
+
+body {
+  font: 1.5em 'Khula', sans-serif !important;
+}
+
+h1 {
+  padding-top: 25px;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/********list styling********/
+
+ul {
+  float: right;
+}
+
+li{
+  display: inline;
+  float: left;
+}
+/********main navbar styling********/
+
+nav {
+  width: 100%;
+  display: inline-block;
+}
+
+nav li a {
+  font-size: 1.6em;
+  padding: 15px 20px;
+  border: 2.5px solid #337ab7;
+  color: #337ab7;
+  margin: -55px 10px 20px 12px;
+  overflow: hidden;
+}
+
+/********section header styling********/
+
+.section-header {
+  text-align: center !important;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 10px 0;
+}

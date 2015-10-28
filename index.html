@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="header-container" class="container-fluid">
+    <header>
+      <row>
+        <div id="header-column">
+          <nav>
+            <ul>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
+              <li data-toggle="modal" data-target="#contact"><a href="#">Contact</a></li>
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </nav>
+        </div>
+      </row>
+    </header>
+  </div>
+   <div class="row">
+     <div class="col-lg-12">
+       <hr>
+     </div>
+  </div>
+  <div id="main-container" class="container-fluid">
+    <main>
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <ul id="top-contacts">
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div id="bio-pic">
+          <img src="img/modal.png" class="image-responsive img-thumbnail center-block" alt="modal image"  srcset="img/modal-sm.png 320w, img/modal-md.png 640w, img/modal-lg.png 1024w"  sizes="100vw">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+   <div class="row">
+     <div class="col-lg-12">
+       <hr>
+     </div>
+  </div>
+  <div id="jobs-container" class="container-fluid">
+    <div class="row">
+      <h2 class="text-center section-header">Work Experience</h2>
+    </div>
+  </div>
+   <div class="row">
+     <div class="col-lg-12">
+       <hr>
+     </div>
+  </div>
+  <div id="projects-container" class="container-fluid">
+    <div class="row">
+      <h2 class="text-center section-header">Projects</h2>
+    </div>
+  </div>
+   <div class="row">
+     <div class="col-lg-12">
+       <hr>
+     </div>
+  </div>
+  <div id="education-container" class="container-fluid">
+    <div class="row">
+      <h2 class="text-center section-header">Education</h2>
+    </div>
+  </div>
+   <div class="row">
+     <div class="col-lg-12">
+       <hr>
+     </div>
+  </div>
+  <div id="map-container" class="container-fluid">
+    <div class="row">
+      <h2 class="text-center section-header">Where I've Lived and Worked</h2>
+      <div class="map">
+      </div>
+    </div>
+  </div>
+   <div class="row">
+     <div class="col-lg-12">
+       <hr>
+     </div>
+  </div>
+  <div id="footer-container" class="container-fluid">
+    <footer>
+      <div class="row">
+        <h2 class="text-center section-header">Let's Connect:</h2>
+        <ul id="bottom-contacts">
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- Modals -->
+  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title text-center" id="myModalLabel">Contact</h3>
+        </div>
+        <div class="modal-body">
+         <textarea class="form-control" rows="6"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/resumeBuilder.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
