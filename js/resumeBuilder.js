@@ -1,3 +1,4 @@
+"use strict";
 var bio = {
     name: "Christopher Webb",
     role: "Front End Developer",
