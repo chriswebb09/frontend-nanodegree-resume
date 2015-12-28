@@ -1,0 +1,162 @@
+* {
+    font-family: Karla !important;
+    font-weight: 100;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    border-top: 1px solid black !important;
+}
+
+span {
+    font-size: .75em;
+    color: gray;
+    margin-left: 12px;
+}
+
+nav li {
+    float: right;
+}
+
+nav>ul>li {
+    font-color: #07A7DC;
+    margin-right: 10px;
+    margin-left: 70px;
+}
+
+.header-name {
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: -5px;
+}
+
+.main-container {
+    background-color: #03A2F3;
+    margin: -20px -15px -20px -15px;
+    color: #fff;
+    padding: 10px 0 70px 0;
+}
+
+.contact-title {
+    font-weight: bold;
+}
+
+
+.contact-item {
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#welcome-message {
+    float: right;
+    margin-top: 140px;
+    margin-right: 20px;
+    font-size: 2em;
+}
+
+.biopic {
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#skills {
+    margin-top: -20px;
+    margin-left: 174px !important;
+    margin-bottom: -25px;
+}
+
+#skills-h3 {
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: -5px !important;
+}
+
+.skill-item {
+    float: left;
+    margin-left: 124px !important;
+    margin-right: 38px !important;
+}
+
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 40px 0;
+    margin: -20px -15px -20px -15px;
+}
+
+.education-entry {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 28px;
+}
+
+
+.projects {
+    background-color: #D8D9DA;
+    margin: -20px -15px -20px -15px;
+    padding: 20px 0 40px;
+}
+
+.project-entry {
+    margin-left: 20px;
+    margin-top: 24px !important;
+    margin-bottom: 0px !important;
+}
+
+.project-entry p {
+    margin: 20px 20px 10px 0px;
+}
+.project-entry h3 {
+    margin-top: 50px;
+    margin-bottom: -5px;
+}
+ .date-text {
+    margin-top: 50px;
+ }
+.project-img {
+    float: right;
+    height: 200px !important;
+    width: 200px !important;
+    margin: 10px 20px 10px 20px;
+}
+
+.location {
+    margin: -20px -15px -20px -15px;
+    background-color: #D8D9DA;
+    padding: 20px 0 40px;
+}
+
+#map {
+    height: 350px;
+    width: 800px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 885px) {
+    #map {
+        height: 350px;
+        width: 600px;
+    }
+    #skills {
+        margin-top: -25px !important;
+    }
+
+    nav  {
+        margin-top: 30px !important;
+    }
+    .contact-item {
+        margin-left: 5px;
+        margin-right: -5px;
+    }
+}
