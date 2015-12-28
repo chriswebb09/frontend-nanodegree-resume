@@ -156,7 +156,6 @@ var work = {
             $('.work-entry:last').append(formattedLocation);
             var formattedDescription = HTMLworkDescription.replace('%data%', val.description);
             $('.work-entry:last').append(formattedDescription);
-
         });
     }
 };
@@ -186,7 +185,7 @@ var projects = {
             var formattedProjectDescription = HTMLprojectDescription.replace('%data%', val.description);
             $('.project-entry:last').append(formattedProjectDescription);
             var formattedProjectImage = HTMLprojectImage.replace('%data%', val.image);
-             $('.project-entry:last').prepend(formattedProjectImage);
+            $('.project-entry:last').prepend(formattedProjectImage);
         });
     }
 };
