@@ -22,7 +22,7 @@ nav li {
 }
 
 nav>ul>li {
-    font-color: #07A7DC;
+    color: #07A7DC;
     margin-right: 10px;
     margin-left: 70px;
 }
@@ -67,10 +67,7 @@ nav>ul>li {
 }
 
 #skills-h3 {
-    margin-top: 20px !important;
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-    margin-bottom: -5px !important;
+    margin: 20px 20px -5px 20px !important;
 }
 
 .skill-item {
