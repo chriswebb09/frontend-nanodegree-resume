@@ -1,5 +1,5 @@
 * {
-    font-family: Karla !important;
+    font-family: Karla;
     font-weight: 100;
 }
 
@@ -95,8 +95,8 @@ nav>ul>li {
     float: left;
     margin-bottom: 20px;
     margin-top: 25px;
-    margin-left: 10px;
-    margin-right: 28px;
+    margin-left: 20px;
+    margin-right: 19px;
 }
 
 

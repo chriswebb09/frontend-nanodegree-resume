@@ -20,7 +20,7 @@ var HTMLskills = '<li class="skill-item">%data%</li>';
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<h3 class="entry-title" href="#">%data%';
 var HTMLworkTitle = ' - %data%</h3>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
+var HTMLworkDates = '<div class="work-date">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
@@ -33,14 +33,14 @@ var HTMLprojectImage = '<img src="%data%" class="project-img img-rounded img-thu
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
+var HTMLschoolDates = '<div class="school-date">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineSchool = '<a href="#">%data%';
 var HTMLonlineCourse = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
+var HTMLonlineDates = '<div class="online-date">%data%</div>';
 var HTMLonlineURL = '<a href="#">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
