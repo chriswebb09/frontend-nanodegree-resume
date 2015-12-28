@@ -87,7 +87,7 @@ var work = {
             var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
             $(".work-entry:last").append(formattedDescription);
         }
-    }
+    };
 }
 
 var projects = {
