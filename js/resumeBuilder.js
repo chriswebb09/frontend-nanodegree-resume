@@ -1,4 +1,3 @@
-"use strict";
 var bio = {
     name: "Christopher Webb",
     role: "Front End Developer",
@@ -53,7 +52,7 @@ var bio = {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
             $("#skills").append(formattedSkill);
         }
-    };
+    }
 }
 
 var work = {
@@ -87,7 +86,7 @@ var work = {
             var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
             $(".work-entry:last").append(formattedDescription);
         }
-    };
+    }
 }
 
 var projects = {
