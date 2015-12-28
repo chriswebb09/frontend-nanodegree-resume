@@ -1,14 +1,3 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-
 var bio = {
     name: "Christopher Webb",
     role: "Front End Developer",
@@ -59,11 +48,9 @@ var bio = {
         $("#contacts").append(formattedFacebook);
         $(".footer").append(formattedFacebook);
         $(".main-container").append(HTMLskillsStart);
-        for (var skill in bio.skills) {
-          if (bio.skills.hasOwnProperty(skill)) {
+        for (skill in bio.skills) {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
             $("#skills").append(formattedSkill);
-        }
         }
     }
 };
@@ -86,8 +73,7 @@ var work = {
     }
     ],
     displayWork: function() {
-        for (var job in work.jobs) {
-          if (work.jobs.hasOwnPropery(job)) {
+        for (job in work.jobs) {
             $("#workExperience").append(HTMLworkStart);
             var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
             var formttedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
@@ -99,7 +85,6 @@ var work = {
             $(".work-entry:last").append(formattedLocation);
             var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
             $(".work-entry:last").append(formattedDescription);
-        }
         }
     }
 };
@@ -120,25 +105,21 @@ var projects = {
     }
     ],
     displayProjects: function() {
-        for (var project in projects.projects) {
-            if  (projects.projects.hasOwnProperty(project)) {
-                $("#projects").append(HTMLprojectStart);
-                var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-                $(".project-entry:last").append(formattedProjectTitle);
-                var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-                $(".project-entry:last").append(formattedProjectDates);
-                var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-                $(".project-entry:last").append(formattedProjectDescription);
-                for (var image in projects.projects[project].images) {
-                    if (projects.projects[project].images.hasOwnProperty(image)) {
-                        var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-                        $(".project-entry:last").prepend(formattedProjectImage);
-                    }
-
+        for (project in projects.projects) {
+            $("#projects").append(HTMLprojectStart);
+            var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+            $(".project-entry:last").append(formattedProjectTitle);
+            var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+            $(".project-entry:last").append(formattedProjectDates);
+            var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+            $(".project-entry:last").append(formattedProjectDescription);
+            for (image in projects.projects[project].images) {
+                var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+                $(".project-entry:last").prepend(formattedProjectImage);
             }
         }
     }
-}
+
 };
 
 var education = {
@@ -148,7 +129,7 @@ var education = {
         location: "Albany, New York",
         degree: "BA (In Progress)",
         dates: "2010-2012",
-        major : ["Liberal Arts", "Business"],
+        major : ["Liberal Arts", "Business"]
     },
     {
         name: "St. Thomas Aquinas College",
@@ -181,25 +162,21 @@ var education = {
     ],
     displayEducation: function() {
 
-        for (var school in education.schools) {
-            if (education.schools.hasOwnProperty(school)) {
-                $("#education").append(HTMLschoolStart);
-                var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
-                $(".education-entry:last").append(formattedSchoolName);
-                var formattedSchoolDegree= HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-                $(".education-entry:last").append(formattedSchoolDegree);
-                var formattedSchoolDates= HTMLschoolDates.replace("%data%", education.schools[school].dates);
-                $(".education-entry:last").append(formattedSchoolDates);
-                var formattedSchoolLocation= HTMLschoolLocation.replace("%data%", education.schools[school].location);
-                $(".education-entry:last").append(formattedSchoolLocation);
-                var formattedSchoolMajor= HTMLschoolMajor.replace("%data%", education.schools[school].major);
-                $(".education-entry:last").append(formattedSchoolMajor);
-            }
-
+        for (school in education.schools) {
+            $("#education").append(HTMLschoolStart);
+            var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+            $(".education-entry:last").append(formattedSchoolName);
+            var formattedSchoolDegree= HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+            $(".education-entry:last").append(formattedSchoolDegree);
+            var formattedSchoolDates= HTMLschoolDates.replace("%data%", education.schools[school].dates);
+            $(".education-entry:last").append(formattedSchoolDates);
+            var formattedSchoolLocation= HTMLschoolLocation.replace("%data%", education.schools[school].location);
+            $(".education-entry:last").append(formattedSchoolLocation);
+            var formattedSchoolMajor= HTMLschoolMajor.replace("%data%", education.schools[school].major);
+            $(".education-entry:last").append(formattedSchoolMajor);
         }
 
-        for (var course in education.onlineCourses) {
-          if (education.onlineCourses.hasOwnProperty(course)) {
+        for (course in education.onlineCourses) {
             $("#education").append(HTMLschoolStart);
             var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].name);
             var formattedOnlineCourse = HTMLonlineCourse.replace("%data%", education.onlineCourses[course].course);
@@ -210,7 +187,6 @@ var education = {
             var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
             $(".education-entry:last").append(formattedURL);
         }
-    }
 
     }
 };
