@@ -44,7 +44,6 @@ nav>ul>li {
     font-weight: bold;
 }
 
-
 .contact-item {
     float: left;
     margin-right: 5px;
@@ -87,7 +86,6 @@ nav>ul>li {
     margin: 25px 20px 20px 19px;
 }
 
-
 .projects {
     background-color: #D8D9DA;
     margin: -20px -15px;
@@ -101,13 +99,14 @@ nav>ul>li {
 .project-entry p {
     margin: 20px 20px 10px 0px;
 }
+
 .project-entry h3 {
     margin: 50px 0 -5px 0;
 }
 
- .date-text {
+.date-text {
     margin-top: 50px;
- }
+}
 
 .project-img {
     float: right;
@@ -129,20 +128,21 @@ nav>ul>li {
     margin: 0 auto;
 }
 
-
 @media only screen and (max-width: 885px) {
     #map {
         height: 350px;
         width: 600px;
     }
+
     #skills {
         margin-top: -25px !important;
     }
 
-    nav  {
+    nav {
         margin-top: 30px !important;
     }
+
     .contact-item {
         margin: 0 -5px 0 5px;
-    }
+    };
 }
