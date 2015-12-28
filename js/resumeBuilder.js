@@ -53,7 +53,7 @@ var bio = {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
             $("#skills").append(formattedSkill);
         }
-    }
+    };
 }
 
 var work = {
