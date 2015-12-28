@@ -1,3 +1,14 @@
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Configure
+// menu.
+
 var bio = {
     name: "Christopher Webb",
     role: "Front End Developer",
@@ -48,12 +59,12 @@ var bio = {
         $("#contacts").append(formattedFacebook);
         $(".footer").append(formattedFacebook);
         $(".main-container").append(HTMLskillsStart);
-        for (skill in bio.skills) {
+        for (var skill in bio.skills) {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
             $("#skills").append(formattedSkill);
         }
     }
-}
+};
 
 var work = {
     jobs: [
@@ -73,7 +84,7 @@ var work = {
     }
     ],
     displayWork: function() {
-        for (job in work.jobs) {
+        for (var job in work.jobs) {
             $("#workExperience").append(HTMLworkStart);
             var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
             var formttedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
@@ -87,7 +98,7 @@ var work = {
             $(".work-entry:last").append(formattedDescription);
         }
     }
-}
+};
 
 var projects = {
     projects: [
@@ -105,7 +116,7 @@ var projects = {
     }
     ],
     displayProjects: function() {
-        for (project in projects.projects) {
+        for (var project in projects.projects) {
             $("#projects").append(HTMLprojectStart);
             var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
             $(".project-entry:last").append(formattedProjectTitle);
@@ -113,14 +124,14 @@ var projects = {
             $(".project-entry:last").append(formattedProjectDates);
             var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
             $(".project-entry:last").append(formattedProjectDescription);
-            for (image in projects.projects[project].images) {
+            for (var image in projects.projects[project].images) {
                 var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
                 $(".project-entry:last").prepend(formattedProjectImage);
             }
         }
     }
 
-}
+};
 
 var education = {
     schools : [
@@ -162,7 +173,7 @@ var education = {
     ],
     displayEducation: function() {
 
-        for (school in education.schools) {
+        for (var school in education.schools) {
             $("#education").append(HTMLschoolStart);
             var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
             $(".education-entry:last").append(formattedSchoolName);
@@ -176,7 +187,7 @@ var education = {
             $(".education-entry:last").append(formattedSchoolMajor);
         }
 
-        for (course in education.onlineCourses) {
+        for (var course in education.onlineCourses) {
             $("#education").append(HTMLschoolStart);
             var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].name);
             var formattedOnlineCourse = HTMLonlineCourse.replace("%data%", education.onlineCourses[course].course);
@@ -189,7 +200,7 @@ var education = {
         }
 
     }
-}
+};
 
 
 work.displayWork();
