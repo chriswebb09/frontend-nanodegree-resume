@@ -22,7 +22,7 @@ nav li {
 }
 
 nav>ul>li {
-    color: #07A7DC;
+    color: #07a7dc;
     margin-right: 10px;
     margin-left: 70px;
 }
@@ -34,7 +34,7 @@ nav>ul>li {
 }
 
 .main-container {
-    background-color: #03A2F3;
+    background-color: #03a2f3;
     margin: -20px -15px -20px -15px;
     color: #fff;
     padding: 10px 0 70px 0;
@@ -46,8 +46,7 @@ nav>ul>li {
 
 .contact-item {
     float: left;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 124px;
 }
 
 #welcome-message {
@@ -87,7 +86,7 @@ nav>ul>li {
 }
 
 .projects {
-    background-color: #D8D9DA;
+    background-color: #d8d9da;
     margin: -20px -15px;
     padding: 20px 0 40px;
 }
@@ -117,7 +116,7 @@ nav>ul>li {
 
 .location {
     margin: -20px -15px;
-    background-color: #D8D9DA;
+    background-color: #d8d9da;
     padding: 20px 0 40px;
 }
 
