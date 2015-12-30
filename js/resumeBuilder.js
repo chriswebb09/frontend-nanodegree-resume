@@ -93,7 +93,7 @@ var education = {
             var formattedSchoolDegree = HTMLschoolDegree.replace('%data%', val.degree);
             var formattedSchoolDates= HTMLschoolDates.replace('%data%', val.dates);
             var formattedSchoolLocation= HTMLschoolLocation.replace('%data%', val.location);
-            var formattedSchoolMajor = HTMLschoolMajor.replace('%data%', val.major);
+            var formattedSchoolMajor = HTMLschoolMajor.replace('%data%', val.majors);
             $('.education-entry:last').append(formattedSchoolName)
                 .append(formattedSchoolDegree)
                 .append(formattedSchoolDates)
