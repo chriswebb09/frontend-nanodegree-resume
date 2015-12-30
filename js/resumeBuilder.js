@@ -129,7 +129,7 @@ var work = {
         'employer': 'Community Co-op',
         'title': 'Store Clerk',
         'location': 'San Francisco',
-        'date': '2011-2013',
+        'dates': '2011-2013',
         'description': ' At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.'
     }
     ],
@@ -140,13 +140,13 @@ var work = {
             var formattedEmployer = HTMLworkEmployer.replace('%data%', val.employer);
             var formttedTitle = HTMLworkTitle.replace('%data%', val.title);
             var formattedEmployerTitle = formattedEmployer + formttedTitle;
-            $('.work-entry:last').append(formattedEmployerTitle);
             var formattedDates = HTMLworkDates.replace('%data%', val.dates);
-            $('.work-entry:last').append(formattedDates);
             var formattedLocation = HTMLworkLocation.replace('%data%', val.location);
-            $('.work-entry:last').append(formattedLocation);
             var formattedDescription = HTMLworkDescription.replace('%data%', val.description);
-            $('.work-entry:last').append(formattedDescription);
+            $('.work-entry:last').append(formattedEmployerTitle)
+                .append(formattedDates)
+                .append(formattedLocation)
+                .append(formattedDescription);
         });
     }
 };
