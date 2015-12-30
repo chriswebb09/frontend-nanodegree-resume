@@ -63,21 +63,21 @@ var education = {
         'name': 'SUNY University',
         'location': 'Albany, New York',
         'degree': 'BA (In Progress)',
-        'dates': '2010-2012',
+        'date ': '2010-2012',
         'major': ['Liberal Arts', 'Business']
     },
     {
         'name': 'St. Thomas Aquinas College',
         'location': 'Sparkill, New York',
         'degree': 'BA (In Progress)',
-        'dates': '2009-2012',
+        'date': '2009-2012',
         'major': ['Liberal Arts']
     },
     {
         'name': 'UC University',
         'location': 'Los Angeles, California',
         'degree': 'BA (In Progress)',
-        'dates': '2009-2012',
+        'date': '2009-2012',
         'major': ['Computer Science']
     }
     ],
@@ -85,13 +85,13 @@ var education = {
         {
             'name': 'Khan Academy',
             'course': 'Mathematics',
-            'dates': '2011-2015',
+            'date': '2011-2015',
             'url': 'www.khanacademy.org'
         },
         {
             'name': 'SUNY Online',
             'course': 'Algebra',
-            'dates': 'Summer 2015',
+            'date': 'Summer 2015',
             'url': 'www.suny.edu'
         }
     ],
@@ -102,7 +102,7 @@ var education = {
             $('.education-entry:last').append(formattedSchoolName);
             var formattedSchoolDegree = HTMLschoolDegree.replace('%data%', val.degree);
             $('.education-entry:last').append(formattedSchoolDegree);
-            var formattedSchoolDates= HTMLschoolDates.replace('%data%', val.dates);
+            var formattedSchoolDates= HTMLschoolDates.replace('%data%', val.date);
             $('.education-entry:last').append(formattedSchoolDates);
             var formattedSchoolLocation= HTMLschoolLocation.replace('%data%', val.location);
             $('.education-entry:last').append(formattedSchoolLocation);
@@ -116,7 +116,7 @@ var education = {
             var formattedOnlineCourse = HTMLonlineCourse.replace('%data%', val.course);
             var formattedOnlineTitle = formattedOnlineSchool + formattedOnlineCourse;
             $('.education-entry:last').append(formattedOnlineTitle);
-            var formattedOnlineDates = HTMLonlineDates.replace('%data%', val.dates);
+            var formattedOnlineDates = HTMLonlineDates.replace('%data%', val.date);
             $('.education-entry:last').append(formattedOnlineDates);
             var formattedURL = HTMLonlineURL.replace('%data%', val.url);
             $('.education-entry:last').append(formattedURL);
@@ -131,14 +131,14 @@ var work = {
         'employer': 'Acme Corp',
         'title': 'Office Clerk',
         'location': 'New York',
-        'dates': '2010 - 2012',
+        'date': '2010 - 2012',
         'description': 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.'
     },
     {
         'employer': 'Community Co-op',
         'title': 'Store Clerk',
         'location': 'San Francisco',
-        'dates': '2011-2013',
+        'date': '2011-2013',
         'description': ' At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.'
     }
     ],
@@ -150,7 +150,7 @@ var work = {
             var formttedTitle = HTMLworkTitle.replace('%data%', val.title);
             var formattedEmployerTitle = formattedEmployer + formttedTitle;
             $('.work-entry:last').append(formattedEmployerTitle);
-            var formattedDates = HTMLworkDates.replace('%data%', val.dates);
+            var formattedDates = HTMLworkDates.replace('%data%', val.date);
             $('.work-entry:last').append(formattedDates);
             var formattedLocation = HTMLworkLocation.replace('%data%', val.location);
             $('.work-entry:last').append(formattedLocation);
@@ -164,13 +164,13 @@ var projects = {
     projects: [
     {
         'title': 'Portfolio',
-        'dates': 'October 2015',
+        'date': 'October 2015',
         'description': 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.',
         'image': 'http://i.ytimg.com/vi/79mA3lp6Nmo/0.jpg'
     },
     {
         'title': 'Project 2',
-        'dates': '2015 - 2016',
+        'date': '2015 - 2016',
         'description': 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
         'image': 'http://i.ytimg.com/vi/79mA3lp6Nmo/0.jpg'
     }
@@ -180,7 +180,7 @@ var projects = {
             $('#projects').append(HTMLprojectStart);
             var formattedProjectTitle = HTMLprojectTitle.replace('%data%', val.title);
             $('.project-entry:last').append(formattedProjectTitle);
-            var formattedProjectDates = HTMLprojectDates.replace('%data%', val.dates);
+            var formattedProjectDates = HTMLprojectDates.replace('%data%', val.date);
             $('.project-entry:last').append(formattedProjectDates);
             var formattedProjectDescription = HTMLprojectDescription.replace('%data%', val.description);
             $('.project-entry:last').append(formattedProjectDescription);
